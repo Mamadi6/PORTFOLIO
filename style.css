@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     /* removed global height:100% which caused layout issues */
-    /* color: white; */
+    color: white;
 }
 
 /* ensure root elements can be 100% when needed */
@@ -45,7 +45,6 @@ html, body {
 }
 .right{
     background-image: url("img/background.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* make the right column at least full viewport height so background covers the area */
@@ -65,7 +64,6 @@ html, body {
 .description{
     color: white;
     line-height: 1.6;
-    max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
 }
