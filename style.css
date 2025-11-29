@@ -18,7 +18,7 @@ html, body {
 .left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     background-color: #4ade80;
     /* let the column naturally stretch, ensure at least full viewport height */
     min-height: 100vh;
@@ -26,6 +26,7 @@ html, body {
     font-size: 1.5rem;
     padding: 20px;
     text-align: center;
+    gap: 20px;
 }
 .profil{
     border: 5px solid #4ade80;
@@ -35,9 +36,19 @@ html, body {
 }
 .left a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
+    border: 5px solid #4ade80;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    background-color: black;
     /* margin-bottom: 20px; */
+}
+.left a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.10s ease;
 }
 .row .container-fluid{
     margin: 0;
@@ -61,10 +72,31 @@ html, body {
     margin-bottom: 1rem;
 }
 
+#apropos , #experience , #formation , #projet, #competence , #interet , #contact{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5%;
+    width: 85%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10PX;
+    box-shadow: 3px 20px 20px #4ade80;
+}
+.experience-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
 .description{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
     color: white;
     line-height: 1.6;
     margin: 0 auto;
     font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px white;
+    padding: 10px;
 }
   
