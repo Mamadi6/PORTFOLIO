@@ -104,3 +104,138 @@ html, body {
     box-shadow: 2px 10px 10px white;
     padding: 10px;
 }
+.skills{
+    text-align: right;
+}
+
+.skill{
+    text-align: right;
+    background-color: white;
+    color: black;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.skillhtmlcss{
+    background-color: #4ade80;
+    width: 90%;  
+}
+
+
+.skilljava{
+    background-color: #4ade80;
+    width: 60%;
+}
+.skilljavascript{
+    background-color: #4ade80;
+    width: 70%;
+}
+.skillphp{
+    background-color: #4ade80;
+    width: 80%;
+}
+.skillsymfony{
+    background-color: blueviolet;
+    width: 50%;
+}
+.skillbootstrap{
+    background-color: blueviolet;
+    width: 75%;
+}
+.skilljquery{
+    background-color: blueviolet;
+    width: 65%;
+}
+.skilllaravel{
+    background-color: blueviolet;
+    width: 55%;
+}
+.skillgit{
+    background-color: blueviolet;
+    width: 80%;
+}
+.skillgithub{
+    background-color: blueviolet;
+    width: 80%;
+}
+.skillvscode{
+    background-color: blueviolet;
+    width: 90%;
+}
+.skillmysql{
+    background-color: blue;
+    width: 90%;
+    color: white;
+}
+.skillsql{
+    background-color: blue;
+    width: 90%;
+    color: white;
+}
+.skillpostegrel{
+    background-color: blue;
+    width: 40%;
+    color: white;
+}
+.skillphpmyadmin{
+    background-color: blue;
+    width: 80%;
+    color: white;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea{
+    background-color: springgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.10s ease;
+}
+.botton-container{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+button{
+    width: 50%;
+    background-color: #4ade80;
+}
+.projet-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 ;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #4ade80;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+footer i{
+    color: blue;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portefolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -102,32 +103,54 @@
 
                         <div class="description">
                             <h5 class="poste" >Langages </h5>
-                            <p>
-                                Développement d'une interface web inspirée de Windows :
-                                Conception d'un écran d'accueil type PC avec système de connexion sécurisé par mot de passe. Réalisation de deux applications 
-                                intégrées : une calculatrice gérant les opérations arithmétiques courantes et un gestionnaire de tâches permettant 
-                                l'ajout, la validation et la suppression intuitive des tâches. Projet entièrement développé en HTML, CSS et JavaScript.
-                            </p>
+                            <div class="skills">
+                                
+                                <span >HTML/CSS</span>
+                                <div class="skill skillhtmlcss">90%</div>
+                                <span>Java</span>
+                                <div class="skill skilljava">60%</div>
+                                <span>JavaScript</span>
+                                <div class="skill skilljavascript">70%</div>
+                                <span>PHP</span>
+                                <div class="skill skillphp">80</div>
+
+                            </div>
+
                         </div>
 
                         <div class="description">
-                            <h5 class="poste" >Frameworks et outils </h5>
-                            <p>
-                                Développement d'une interface web inspirée de Windows :
-                                Conception d'un écran d'accueil type PC avec système de connexion sécurisé par mot de passe. Réalisation de deux applications 
-                                intégrées : une calculatrice gérant les opérations arithmétiques courantes et un gestionnaire de tâches permettant 
-                                l'ajout, la validation et la suppression intuitive des tâches. Projet entièrement développé en HTML, CSS et JavaScript.
-                            </p>
+                            <h5 class="poste"> Frameworks et outils </h5>
+                            <div class="skills">
+                                <span>bootstrap</span>
+                                <div class="skill skillbootstrap">75%</div>
+                                <span>Laravel</span>
+                                <div class="skill skilllaravel">50%</div>
+                                <span>Jquery</span>
+                                <div class="skill skilljquery">60%</div>
+                                <span>Git</span>
+                                <div class="skill skillgit">80%</div>
+                                <span>GitHub</span>
+                                <div class="skill skillgithub">80%</div>
+                                <span>Symfony</span>
+                                <div class="skill skillsymfony">50%</div>
+                                <span>VS Code</span>
+                                <div class="skill skillvscode">90%</div>
+                            </div>
                         </div>
 
                         <div class="description">
                             <h5 class="poste" >Base de données </h5>
-                            <p>
-                                Développement d'une interface web inspirée de Windows :
-                                Conception d'un écran d'accueil type PC avec système de connexion sécurisé par mot de passe. Réalisation de deux applications 
-                                intégrées : une calculatrice gérant les opérations arithmétiques courantes et un gestionnaire de tâches permettant 
-                                l'ajout, la validation et la suppression intuitive des tâches. Projet entièrement développé en HTML, CSS et JavaScript.
-                            </p>
+                            <div class="skills">
+                                <span>MySQL</span>
+                                <div class="skill skillmysql">90%</div>
+                                <span>SQL</span>
+                                <div class="skill skillsql">90%</div>
+                                <span>Postegrel</span>
+                                <div class="skill skillpostegrel">40%</div>
+                                <span>phpMyAdmin</span>
+                                <div class="skill skillphpmyadmin">80%</div>
+                                
+                            </div>
                         </div>
 
                     </div>
@@ -143,10 +166,17 @@
 
                 <section id="projet">
                     <h2 class="titre"> Mes projets </h2>
-                    <p class="description">
-                        Bonjour ! Je suis un développeur web passionné avec une expérience en création
-                        de sites web modernes et réactifs. J'aime transformer des idées en réalité numérique.
-                    </p>
+                    <div class="projet-container">
+                        <div class="photo">
+                            <img src="img/reservation.png" width="200" height="300" alt="reservation de voiture">
+                        </div>
+                        <div class="photo">
+                            <img src="img/qcm.png" width="200" height="300" alt="qcm">
+                        </div>
+                        <div class="photo">
+                            <img src="img/qcm.png" width="200" height="300" alt="qcm">
+                        </div>
+                    </div>
                 </section>
 
                 <section id="interet">
@@ -159,10 +189,25 @@
 
                 <section id="contact">
                     <h2 class="titre"> Contactez Moi </h2>
-                    <p class="description">
-                        Bonjour ! Je suis un développeur web passionné avec une expérience en création
-                        de sites web modernes et réactifs. J'aime transformer des idées en réalité numérique.
-                    </p>
+                    <form action="">
+                        <div class="mb-5">
+                            <label for="name" class="form-label ">Nom :</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="form-label">Message :</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="botton-container">
+                            <button type="submit" class="btn btn-light">Envoyer</button>
+                        </div>
+
+                    </form>
+                    
                 </section>
 
 
@@ -171,6 +216,18 @@
                
 
             </main>
+
+            <footer>
+            <p>&copy; 2025 Mamadi Samassa. Tous droits réservés.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/mamadi-samassa/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a> |
+                <a href="https://github.com/Mamadi6" target="_blank">GitHub <i class="fa-brands fa-github"></i></a> |
+                <a href="mailto:samassamamadi1@gmail.com" target="_blank">Mail <i class="fa-solid fa-square-envelope"></i></a>
+            </div>
+           
+                
+            
+            </footer>
         
         </div>
 
