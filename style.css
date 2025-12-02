@@ -3,17 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    /* removed global height:100% which caused layout issues */
     color: white;
 }
 
-/* ensure root elements can be 100% when needed */
+
 html, body {
     height: 100%;
 }
-    /* background-color: #3b82f6; */
-    /* background-color: #4ade80; */
-    /* background-color: #7ff8ab; */
+ 
 #header{
     text-align: center;
     margin-bottom: 30px;
@@ -23,9 +20,7 @@ html, body {
 .left{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     background-color: #4ade80;
-    /* let the column naturally stretch, ensure at least full viewport height */
     min-height: 100vh;
     color: white;
     font-size: 1.5rem;
@@ -48,7 +43,6 @@ html, body {
     padding: 10px;
     display: block;
     background-color: black;
-    /* margin-bottom: 20px; */
 }
 .left a:hover{
     background-color: white;
@@ -63,9 +57,7 @@ html, body {
     background-image: url("img/background.jpg");
     background-size: cover;
     background-position: center;
-    /* make the right column at least full viewport height so background covers the area */
     min-height: 100vh;
-    /* padding so text isn't glued to the edges */
     padding: 40px 30px;
     color: white;
 }
@@ -274,6 +266,82 @@ footer i{
 }
 .interets-item h5:hover{
     color: white;
+}
+
+
+/* ----------------- Responsive avec media ----------------- */
+@media (max-width: 992px) {
+    .titre{ font-size: 2.2rem; }
+    .description{ font-size: 1.05rem; padding: 0 10px; }
+}
+
+@media (max-width: 768px) {
+    /* la barre verticale en horizontale */
+    .container-fluid.row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+        padding: 5px;
+        min-height: auto;
+        width: 100%;
+    }
+
+    .left a{
+        font-size: 1rem;
+        margin: 0;
+        padding: 1px;
+        
+    }
+
+    .profil{
+        max-width: 120px;
+        width: auto;
+        height: auto;
+    }
+
+    .right{
+        padding: 24px 18px;
+        min-height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* pour ajustements */
+    .left{
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .left a{
+        font-size: 0.95rem;
+        margin: 6px 6px;
+    }
+
+    .profil{
+        max-width: 80px;
+    }
+
+    .titre{
+        font-size: 1.6rem;
+    }
+
+    .description{
+        font-size: 1rem;
+        padding: 0 8px;
+    }
+
+    .right{
+        padding: 18px 12px;
+    }
 }
 
 
