@@ -239,3 +239,7 @@ footer a{
 footer i{
     color: blue;
 }
+
+.annee{
+    text-align: right;
+}
