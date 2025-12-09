@@ -16,6 +16,11 @@ html, body {
     background-size: cover;
 
 }
+.multiple-text{
+    color: #4ade80;
+    font-weight: bold;
+    text-transform: uppercase;
+}
  
 #header{
     text-align: center;
