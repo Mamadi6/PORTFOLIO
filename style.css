@@ -10,6 +10,12 @@
 html, body {
     height: 100%;
 }
+.container-fluid{
+    /* background-color: rgb(27, 24, 24); */
+    background-image: url("img/background.jpg");
+    background-size: cover;
+
+}
  
 #header{
     text-align: center;
@@ -267,16 +273,82 @@ footer i{
 .interets-item h5:hover{
     color: white;
 }
+.burger-menu{
+    background-color: black;
+    text-align: center;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 12px; */
+    /* margin-right: 36px; */
+}
+#burgerContent a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 5px solid #4ade80;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+}
+/* #burgerContent{
+    padding: 20px;
+    gap: 20px;
+} */
+#burgerContent a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.10s ease;
+}
+#burgerContent img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 1227px){
+    
+    .burger-menu{
+        display: block;
+        width: 100%;
+        margin-right: auto;
+        min-width: 400px;
+    }
+    .left{
+        display: none;
+    }
+
+    .right{
+        width: 100%;
+        min-width: 400px;
+    }
+    .right h1{
+        font-size: 2rem;
+    }
+    .right .nom{
+        font-size: 1.2rem;
+    }
+    footer{
+        width: 100%;
+        min-width: 400px;
+    }
+
+
+}
 
 
 /* ----------------- Responsive avec media ----------------- */
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
     .titre{ font-size: 2.2rem; }
     .description{ font-size: 1.05rem; padding: 0 10px; }
 }
 
-@media (max-width: 768px) {
-    /* la barre verticale en horizontale */
+/*@media (max-width: 768px) {
+    /* la barre verticale en horizontale 
     .container-fluid.row{
         display: flex;
         flex-direction: column;
@@ -314,7 +386,7 @@ footer i{
 }
 
 @media (max-width: 576px) {
-    /* pour ajustements */
+    /* pour ajustements 
     .left{
         flex-wrap: wrap;
         gap: 8px;
@@ -342,7 +414,8 @@ footer i{
     .right{
         padding: 18px 12px;
     }
-}
+}*/
+
 
 
 
