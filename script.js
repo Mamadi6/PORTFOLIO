@@ -13,6 +13,14 @@ toggle.addEventListener('click', () => {
     backDelay: 1000,
     loop: true
 });
+ const Slogan = new Typed('.slogan', {
+
+    strings: ['Créez l\'avenir du web avec moi', 'Votre projet , ma mission','Transformez vos idées en expériences digitales'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
 
 //Scroll reveal( animation au scroll: reset se joue a chaque scroll, distance de l'animation, duration duree de l'animation, delay delai avant le debut de l'animation)
 ScrollReveal({
