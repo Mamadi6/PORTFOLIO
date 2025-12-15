@@ -1,5 +1,14 @@
 const toggle = document.getElementById('burgerToggle');
 const content = document.getElementById('burgerContent');
+const photo = document.querySelector('.photo').forEach(photo =>{
+
+photo.addEventListener('mouseenter', () => {
+    photo.classList.add('active');
+});
+photo.addEventListener('mouseleave', () => {
+    photo.classList.remove('active');
+});
+});
 
 toggle.addEventListener('click', () => {
     content.style.display = content.style.display === 'none' ? 'block' : 'none';
